@@ -1,0 +1,85 @@
+<!doctype html>
+<!-- Hero section 03 · Video background · Free from Buildstok: https://buildstok.com/products/hero-pack-html/ · Licence: https://buildstok.com/license/ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hero section 03 · Video background</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* bs-scoped */
+.bs-hero-03 {--bs-brand:#4f46e5;--bs-brand-ink:#ffffff;--bs-ink:#0f172a;--bs-muted:#64748b;--bs-line:#e2e8f0;--bs-soft:#f8fafc;--bs-radius:12px;--bs-max:1200px}
+.bs-hero-03, .bs-hero-03 *, .bs-hero-03::before, .bs-hero-03 *::before, .bs-hero-03::after, .bs-hero-03 *::after {box-sizing:border-box}
+.bs-hero-03 {font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.bs-hero-03 {color:var(--bs-ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+.bs-hero-03 img, .bs-hero-03 svg {max-width:100%}
+.bs-hero-03 a {color:inherit;text-decoration:none}
+.bs-hero-03 button, .bs-hero-03 input, .bs-hero-03 select, .bs-hero-03 textarea {font:inherit;color:inherit}
+.bs-hero-03 button {cursor:pointer}
+.bs-hero-03 h1, .bs-hero-03 h2, .bs-hero-03 h3, .bs-hero-03 h4, .bs-hero-03 p {margin:0}.bs-hero-03 h1, .bs-hero-03 h2 {line-height:1.12}.bs-hero-03 h3, .bs-hero-03 h4 {line-height:1.3}
+.bs-hero-03 .bs-wrap {max-width:var(--bs-max);margin:0 auto;padding:0 24px}
+.bs-hero-03 .bs-logo {display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.02em}
+.bs-hero-03 .bs-logo-mark {display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:var(--bs-brand);color:var(--bs-brand-ink);flex:none}
+.bs-hero-03 .bs-btn {display:inline-flex;align-items:center;justify-content:center;gap:8px;height:46px;padding:0 22px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid transparent;transition:.18s;white-space:nowrap}
+.bs-hero-03 .bs-btn svg {flex:none}
+.bs-hero-03 .bs-btn-primary {background:var(--bs-brand);color:var(--bs-brand-ink)}
+.bs-hero-03 .bs-btn-primary:hover {filter:brightness(1.1);transform:translateY(-1px)}
+.bs-hero-03 .bs-btn-ghost {border-color:var(--bs-line);background:#fff;color:var(--bs-ink)}
+.bs-hero-03 .bs-btn-ghost:hover {border-color:var(--bs-ink)}
+.bs-hero-03 .bs-stars {display:inline-flex;flex:none;gap:1px}.bs-hero-03 .bs-stars svg {flex:none}
+.bs-hero-03 .bs-sr {position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.bs-hero-03 :focus-visible {outline:2px solid var(--bs-brand);outline-offset:2px}
+.bs-hero-03 [tabindex="-1"]:focus {outline:none}
+@media(prefers-reduced-motion:reduce){.bs-hero-03, .bs-hero-03 *, .bs-hero-03::before, .bs-hero-03 *::before, .bs-hero-03::after, .bs-hero-03 *::after {animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.bs-hero-03 .bs-av {display:inline-grid;place-items:center;border-radius:50%;color:#fff;font-weight:700;flex:none;letter-spacing:.02em}
+.hero3 {position:relative;min-height:min(760px,100vh);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#0c1a24}
+.hero3 .vid {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:linear-gradient(180deg,#1d4e6b 0%,#3d7a8f 45%,#e7b98a 75%,#c47a55 100%)}
+.hero3 .vid span {position:absolute;border-radius:50%;filter:blur(60px);opacity:.7;animation:bs-h3drift 18s ease-in-out infinite alternate}
+.hero3 .b1 {width:50vw;height:50vw;left:-10vw;top:-20vw;background:#5fa8c4}.hero3 .b2 {width:40vw;height:40vw;right:-5vw;top:10%;background:#f2c48d;animation-delay:-6s!important}.hero3 .b3 {width:36vw;height:30vw;left:30%;bottom:-10vw;background:#24485e;animation-delay:-12s!important}
+.hero3 .vid .ridge {border-radius:0;filter:none;opacity:1;left:0;right:0;bottom:0;height:45%;background:linear-gradient(180deg,#14303f,#0b1820);clip-path:polygon(0 60%,12% 30%,22% 48%,36% 8%,48% 40%,58% 22%,70% 50%,82% 18%,92% 38%,100% 26%,100% 100%,0 100%);animation:none}
+@keyframes bs-h3drift{to{transform:translate(8vw,4vw) scale(1.15)}}
+.hero3.paused .vid span {animation-play-state:paused}
+.hero3 .shade {position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,14,20,.15) 30%,rgba(6,14,20,.75))}
+.hero3 .in {position:relative;display:flex;justify-content:space-between;align-items:flex-end;gap:40px;padding-bottom:64px;padding-top:120px;width:100%}
+.hero3 .loc {display:inline-flex;gap:6px;align-items:center;font-size:14px;font-weight:600;background:rgba(255,255,255,.14);backdrop-filter:blur(8px);padding:6px 14px;border-radius:999px;margin-bottom:20px}
+.hero3 h1 {font-size:clamp(44px,7.5vw,104px);line-height:.95;letter-spacing:-.045em;font-weight:800;margin-bottom:20px}
+.hero3 p {font-size:19px;max-width:460px;color:rgba(255,255,255,.85);line-height:1.55;margin-bottom:30px}
+.hero3 .ctas {display:flex;gap:12px;flex-wrap:wrap}
+.hero3 .bs-btn {height:54px;padding:0 28px;border-radius:999px}.hero3 .btn-light {background:#fff;color:#0c1a24}.hero3 .btn-light:hover {background:#e7f1f5}
+.hero3 .btn-line {border-color:rgba(255,255,255,.5);color:#fff}.hero3 .btn-line:hover {background:rgba(255,255,255,.12)}
+.hero3 .side {display:flex;flex-direction:column;align-items:flex-end;gap:26px}
+.hero3 dl {display:flex;gap:36px;margin:0}.hero3 dl div {border-left:1px solid rgba(255,255,255,.3);padding-left:16px}.hero3 dt {font-size:13px;color:rgba(255,255,255,.7);white-space:nowrap}.hero3 dd {margin:0;font-size:34px;font-weight:700;letter-spacing:-.03em}
+.hero3 .pp {width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.5);background:rgba(255,255,255,.08);color:#fff;display:grid;place-items:center}.hero3 .pp:hover {background:rgba(255,255,255,.2)}
+.hero3 .i-pause {display:flex}.hero3 .i-play {display:none}
+.hero3.paused .i-pause {display:none}.hero3.paused .i-play {display:flex}
+@media(prefers-reduced-motion:reduce){.hero3 .vid span {animation:none}}
+@media(max-width:900px){.hero3 .in {flex-direction:column;align-items:flex-start}.hero3 .side {flex-direction:row;align-items:center;width:100%;justify-content:space-between}}
+@media(max-width:560px){.hero3 dl {gap:16px}.hero3 dd {font-size:26px}.hero3 dl div {padding-left:10px}.hero3 .pp {display:none}.hero3 .bs-btn {flex:1}.hero3 .in {padding-bottom:40px}}
+</style>
+<style>
+/* Preview page only: you do not need this block in your site */
+html {font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body {margin:0;color:var(--bs-ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+</style>
+</head>
+<body>
+<section class="bs-hero-03 hero3" aria-label="Featured trip">
+  <!-- Replace .vid with: <video class="vid" autoplay muted loop playsinline poster="poster.jpg" src="your-video.mp4"></video> -->
+  <div class="vid" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span><span class="ridge"></span></div>
+  <div class="shade"></div>
+  <div class="bs-wrap in">
+    <div class="copy">
+      <span class="loc"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Lofoten, Norway · 8 days</span>
+      <h1>Wild places,<br>slowly travelled.</h1>
+      <p>Small-group adventures led by local guides. No rush, no crowds, just the view.</p>
+      <div class="ctas"><a href="#" class="bs-btn btn-light">Explore trips</a><a href="#" class="bs-btn btn-line">How it works</a></div>
+    </div>
+    <div class="side">
+      <dl><div><dt>Trips in 2026</dt><dd>48</dd></div><div><dt>Max group size</dt><dd>12</dd></div><div><dt>Guest rating</dt><dd>4.9</dd></div></dl>
+      <button class="pp" aria-pressed="false" aria-label="Pause background video"><span class="i-pause"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg></span><span class="i-play"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg></span></button>
+    </div>
+  </div>
+</section>
+<script>document.querySelectorAll('.hero3 .pp').forEach(function(b){b.addEventListener('click',function(){var s=b.closest('.hero3'),p=s.classList.toggle('paused');b.setAttribute('aria-pressed',p);b.setAttribute('aria-label',p?'Play background video':'Pause background video');var v=s.querySelector('video');if(v){p?v.pause():v.play()}})});</script>
+</body>
+</html>

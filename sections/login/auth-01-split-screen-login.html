@@ -1,0 +1,90 @@
+<!doctype html>
+<!-- Auth screen 01 · Split screen login · Free from Buildstok: https://buildstok.com/products/login-pack-html/ · Licence: https://buildstok.com/license/ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auth screen 01 · Split screen login</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* bs-scoped */
+.bs-auth-01 {--bs-brand:#4f46e5;--bs-brand-ink:#ffffff;--bs-ink:#0f172a;--bs-muted:#64748b;--bs-line:#e2e8f0;--bs-soft:#f8fafc;--bs-radius:12px;--bs-max:1200px}
+.bs-auth-01, .bs-auth-01 *, .bs-auth-01::before, .bs-auth-01 *::before, .bs-auth-01::after, .bs-auth-01 *::after {box-sizing:border-box}
+.bs-auth-01 {font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.bs-auth-01 {color:var(--bs-ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+.bs-auth-01 img, .bs-auth-01 svg {max-width:100%}
+.bs-auth-01 a {color:inherit;text-decoration:none}
+.bs-auth-01 button, .bs-auth-01 input, .bs-auth-01 select, .bs-auth-01 textarea {font:inherit;color:inherit}
+.bs-auth-01 button {cursor:pointer}
+.bs-auth-01 h1, .bs-auth-01 h2, .bs-auth-01 h3, .bs-auth-01 h4, .bs-auth-01 p {margin:0}.bs-auth-01 h1, .bs-auth-01 h2 {line-height:1.12}.bs-auth-01 h3, .bs-auth-01 h4 {line-height:1.3}
+.bs-auth-01 .bs-wrap {max-width:var(--bs-max);margin:0 auto;padding:0 24px}
+.bs-auth-01 .bs-logo {display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.02em}
+.bs-auth-01 .bs-logo-mark {display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:var(--bs-brand);color:var(--bs-brand-ink);flex:none}
+.bs-auth-01 .bs-btn {display:inline-flex;align-items:center;justify-content:center;gap:8px;height:46px;padding:0 22px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid transparent;transition:.18s;white-space:nowrap}
+.bs-auth-01 .bs-btn svg {flex:none}
+.bs-auth-01 .bs-btn-primary {background:var(--bs-brand);color:var(--bs-brand-ink)}
+.bs-auth-01 .bs-btn-primary:hover {filter:brightness(1.1);transform:translateY(-1px)}
+.bs-auth-01 .bs-btn-ghost {border-color:var(--bs-line);background:#fff;color:var(--bs-ink)}
+.bs-auth-01 .bs-btn-ghost:hover {border-color:var(--bs-ink)}
+.bs-auth-01 .bs-stars {display:inline-flex;flex:none;gap:1px}.bs-auth-01 .bs-stars svg {flex:none}
+.bs-auth-01 .bs-sr {position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.bs-auth-01 :focus-visible {outline:2px solid var(--bs-brand);outline-offset:2px}
+.bs-auth-01 [tabindex="-1"]:focus {outline:none}
+@media(prefers-reduced-motion:reduce){.bs-auth-01, .bs-auth-01 *, .bs-auth-01::before, .bs-auth-01 *::before, .bs-auth-01::after, .bs-auth-01 *::after {animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.bs-auth-01 .bs-av {display:inline-grid;place-items:center;border-radius:50%;color:#fff;font-weight:700;flex:none;letter-spacing:.02em}
+.au1 label {display:grid;gap:6px;font-size:14px;font-weight:600}
+.au1 input:not([type=checkbox]):not([type=radio]), .au1 select {width:100%;min-width:0;height:48px;border:1px solid var(--bs-line);border-radius:10px;padding:0 14px;font-size:15px;font-weight:400;background:#fff;transition:border-color .15s,box-shadow .15s}
+.au1 input:focus, .au1 select:focus {outline:none;border-color:var(--bs-brand);box-shadow:0 0 0 4px color-mix(in srgb,var(--bs-brand) 16%,transparent)}
+.au1 [aria-invalid=true] {border-color:#dc2626!important}.au1 .err {color:#dc2626;font-size:13px;font-weight:500}.au1 .err:empty {display:none}
+.au1 .pw {position:relative;display:block}.au1 .pw input {padding-right:48px}.au1 .pw button {position:absolute;right:4px;top:4px;width:40px;height:40px;border:0;background:none;border-radius:8px;color:var(--bs-muted);display:grid;place-items:center}.au1 .pw button:hover {color:var(--bs-ink)}
+.au1 .chk {display:flex;gap:9px;align-items:center;font-weight:400;font-size:14px;color:var(--bs-muted);cursor:pointer}.au1 .chk input {width:17px;height:17px;accent-color:var(--bs-brand)}
+.au1 .or {display:flex;align-items:center;gap:12px;color:var(--bs-muted);font-size:13px}.au1 .or::before, .au1 .or::after {content:"";flex:1;height:1px;background:var(--bs-line)}
+.au1 .soc {display:flex;align-items:center;justify-content:center;gap:10px;height:48px;border:1px solid var(--bs-line);border-radius:10px;background:#fff;font-weight:600;font-size:14.5px;width:100%}.au1 .soc:hover {background:var(--bs-soft)}
+.au1 {display:grid;grid-template-columns:1fr 1fr;min-height:100vh;background:#fff}
+.au1 .l {display:flex;flex-direction:column;padding:32px 48px}
+.au1 .f {width:100%;max-width:400px;margin:auto;display:grid;gap:16px;padding:40px 0}
+.au1 h1 {font-size:32px;letter-spacing:-.035em}.au1 .sub {color:var(--bs-muted);margin-top:-8px}
+.au1 .row {display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.au1 .row a, .au1 .sw a {color:var(--bs-brand);font-weight:600;font-size:14px}
+.au1 .f .bs-btn {height:50px}.au1 .ok {display:none;gap:8px;align-items:center;color:#15803d;font-weight:600}.au1 .done .ok {display:flex}
+.au1 .sw {text-align:center;font-size:14.5px;color:var(--bs-muted)}
+.au1 .ft {font-size:13px;color:var(--bs-muted)}.au1 .ft a:hover {color:var(--bs-ink)}
+.au1 .r {position:relative;margin:16px;border-radius:28px;overflow:hidden}.au1 .r>svg {position:absolute;inset:0;width:100%;height:100%}
+.au1 figure {position:absolute;left:32px;right:32px;bottom:32px;margin:0;padding:24px;border-radius:20px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(12px);color:#fff}
+.au1 blockquote {margin:0 0 16px;font-size:18px;line-height:1.5;font-weight:500}.au1 figcaption {display:flex;gap:12px;align-items:center}.au1 figcaption b {display:block}.au1 figcaption small {opacity:.8}
+@media(max-width:900px){.au1 {grid-template-columns:1fr}.au1 .r {display:none}}
+@media(max-width:560px){.au1 .l {padding:24px}}
+</style>
+<style>
+/* Preview page only: you do not need this block in your site */
+html {font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body {margin:0;color:var(--bs-ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+</style>
+</head>
+<body>
+<section class="bs-auth-01 au1">
+  <div class="l">
+    <a href="#" class="bs-logo" aria-label="Lumen home"><span class="bs-logo-mark"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v16h12"/></svg></span><span class="logo-name">Lumen</span></a>
+    <form class="f" data-v novalidate>
+      <h1>Welcome back</h1><p class="sub">Sign in to your workspace to pick up where you left off.</p>
+      <button type="button" class="soc"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5c-.3 1.5-1.1 2.7-2.4 3.6v3h3.9c2.3-2.1 3.5-5.2 3.5-8.8z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.9-3c-1.1.7-2.4 1.2-4 1.2-3.1 0-5.7-2.1-6.6-4.9H1.4v3.1C3.4 21.4 7.4 24 12 24z"/><path fill="#FBBC05" d="M5.4 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V6.6h-4C.5 8.2 0 10 0 12s.5 3.8 1.4 5.4l4-3.1z"/><path fill="#EA4335" d="M12 4.8c1.8 0 3.3.6 4.6 1.8l3.4-3.4C17.9 1.2 15.2 0 12 0 7.4 0 3.4 2.6 1.4 6.6l4 3.1c.9-2.8 3.5-4.9 6.6-4.9z"/></svg> Continue with Google</button>
+      <div class="or"><span>or</span></div>
+      <label>Email<input type="email" name="email" autocomplete="email" placeholder="you@company.com" required></label>
+      <label>Password<span class="pw"><input type="password" name="password" autocomplete="current-password" placeholder="" required minlength="8"><button type="button" aria-label="Show password" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></span></label>
+      <div class="row"><label class="chk"><input type="checkbox" checked> Keep me signed in</label><a href="#">Forgot password?</a></div>
+      <p class="err" role="alert"></p>
+      <button class="bs-btn bs-btn-primary">Sign in</button>
+      <p class="ok" role="status"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg> Signed in. Redirecting…</p>
+      <p class="sw">New to Lumen? <a href="#">Create an account</a></p>
+    </form>
+    <p class="ft">© 2026 Lumen · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </div>
+  <div class="r" aria-hidden="true"><svg viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="600" height="800" fill="#312e81"/>
+<circle cx="480" cy="140" r="180" fill="#818cf8" opacity=".55"/><circle cx="80" cy="700" r="240" fill="#4f46e5" opacity=".5"/>
+<g transform="translate(120 230)"><rect width="360" height="250" rx="22" fill="#fff" opacity=".96"/><rect x="24" y="26" width="140" height="14" rx="7" fill="#4f46e5"/><rect x="24" y="56" width="90" height="34" rx="8" fill="#818cf8" opacity=".35"/>
+<path d="M24 210 L84 170 L134 186 L190 130 L250 150 L336 80" fill="none" stroke="#4f46e5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g transform="translate(330 430)"><rect width="200" height="110" rx="18" fill="#fff"/><circle cx="40" cy="40" r="18" fill="#818cf8"/><rect x="70" y="30" width="100" height="10" rx="5" fill="#e2e8f0"/><rect x="70" y="48" width="70" height="10" rx="5" fill="#e2e8f0"/><rect x="22" y="76" width="156" height="12" rx="6" fill="#4f46e5" opacity=".6"/></g></svg><figure><blockquote>"Lumen gives our whole team the same numbers, in plain English. Mondays are calmer now."</blockquote><figcaption><span class="bs-av" style="width:36px;height:36px;background:linear-gradient(135deg,#f97316,#f97316cc);font-size:13px" aria-hidden="true">AO</span><span><b>Amara Okafor</b><small>Head of Finance, Northwind</small></span></figcaption></figure></div>
+</section>
+<script>document.querySelectorAll('.pw button').forEach(function(b){b.addEventListener('click',function(){var i=b.parentElement.querySelector('input'),s=i.type==='password';i.type=s?'text':'password';b.setAttribute('aria-pressed',s);b.setAttribute('aria-label',s?'Hide password':'Show password')})});document.querySelectorAll('form[data-v]').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();var bad=[].slice.call(f.querySelectorAll('input[required]')).filter(function(i){var ok=i.checkValidity();i.setAttribute('aria-invalid',!ok);return !ok});
+  var er=f.querySelector('.err');if(er)er.textContent=bad.length?'Please check the highlighted '+(bad.length>1?'fields.':'field.'):'';if(bad.length){bad[0].focus();return}f.classList.add('done')})});</script>
+</body>
+</html>

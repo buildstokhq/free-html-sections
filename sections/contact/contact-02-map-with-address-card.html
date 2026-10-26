@@ -1,0 +1,81 @@
+<!doctype html>
+<!-- Contact section 02 · Map with address card · Free from Buildstok: https://buildstok.com/products/contact-pack-html/ · Licence: https://buildstok.com/license/ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact section 02 · Map with address card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* bs-scoped */
+.bs-contact-02 {--bs-brand:#4f46e5;--bs-brand-ink:#ffffff;--bs-ink:#0f172a;--bs-muted:#64748b;--bs-line:#e2e8f0;--bs-soft:#f8fafc;--bs-radius:12px;--bs-max:1200px}
+.bs-contact-02, .bs-contact-02 *, .bs-contact-02::before, .bs-contact-02 *::before, .bs-contact-02::after, .bs-contact-02 *::after {box-sizing:border-box}
+.bs-contact-02 {font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.bs-contact-02 {color:var(--bs-ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+.bs-contact-02 img, .bs-contact-02 svg {max-width:100%}
+.bs-contact-02 a {color:inherit;text-decoration:none}
+.bs-contact-02 button, .bs-contact-02 input, .bs-contact-02 select, .bs-contact-02 textarea {font:inherit;color:inherit}
+.bs-contact-02 button {cursor:pointer}
+.bs-contact-02 h1, .bs-contact-02 h2, .bs-contact-02 h3, .bs-contact-02 h4, .bs-contact-02 p {margin:0}.bs-contact-02 h1, .bs-contact-02 h2 {line-height:1.12}.bs-contact-02 h3, .bs-contact-02 h4 {line-height:1.3}
+.bs-contact-02 .bs-wrap {max-width:var(--bs-max);margin:0 auto;padding:0 24px}
+.bs-contact-02 .bs-logo {display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.02em}
+.bs-contact-02 .bs-logo-mark {display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:var(--bs-brand);color:var(--bs-brand-ink);flex:none}
+.bs-contact-02 .bs-btn {display:inline-flex;align-items:center;justify-content:center;gap:8px;height:46px;padding:0 22px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid transparent;transition:.18s;white-space:nowrap}
+.bs-contact-02 .bs-btn svg {flex:none}
+.bs-contact-02 .bs-btn-primary {background:var(--bs-brand);color:var(--bs-brand-ink)}
+.bs-contact-02 .bs-btn-primary:hover {filter:brightness(1.1);transform:translateY(-1px)}
+.bs-contact-02 .bs-btn-ghost {border-color:var(--bs-line);background:#fff;color:var(--bs-ink)}
+.bs-contact-02 .bs-btn-ghost:hover {border-color:var(--bs-ink)}
+.bs-contact-02 .bs-stars {display:inline-flex;flex:none;gap:1px}.bs-contact-02 .bs-stars svg {flex:none}
+.bs-contact-02 .bs-sr {position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.bs-contact-02 :focus-visible {outline:2px solid var(--bs-brand);outline-offset:2px}
+.bs-contact-02 [tabindex="-1"]:focus {outline:none}
+@media(prefers-reduced-motion:reduce){.bs-contact-02, .bs-contact-02 *, .bs-contact-02::before, .bs-contact-02 *::before, .bs-contact-02::after, .bs-contact-02 *::after {animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.bs-contact-02 .bs-av {display:inline-grid;place-items:center;border-radius:50%;color:#fff;font-weight:700;flex:none;letter-spacing:.02em}
+.cf2 .eyebrow {font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--bs-brand)}
+.cf2 .h2 {font-size:clamp(30px,4.2vw,50px);line-height:1.08;letter-spacing:-.035em;margin:12px 0 14px}
+.cf2 .sub {color:var(--bs-muted);font-size:18px;line-height:1.6}
+.cf2 {--bs-brand:#9a5b34;position:relative;padding:0;background:#efe9df;min-height:620px;overflow:hidden}
+.cf2 .map {position:absolute;inset:0;width:100%;height:100%;border:0;background:#ece5d8;background-image:linear-gradient(rgba(255,255,255,.55) 2px,transparent 2px),linear-gradient(90deg,rgba(255,255,255,.55) 2px,transparent 2px);background-size:80px 80px}
+.cf2 .map span {position:absolute}
+.cf2 .river {left:-10%;right:-10%;top:62%;height:70px;background:#b9d3e0;transform:rotate(-8deg);border-radius:40px}
+.cf2 .park {right:8%;top:10%;width:260px;height:180px;border-radius:40px;background:#cfe0bf}
+.cf2 .rd {background:#fff;box-shadow:0 0 0 1px #e2d8c8}.cf2 .r1 {left:0;right:0;top:34%;height:16px}.cf2 .r2 {top:0;bottom:0;left:62%;width:18px}.cf2 .r3 {top:0;bottom:0;left:84%;width:12px;transform:rotate(12deg)}.cf2 .r4 {left:40%;right:0;top:18%;height:10px;transform:rotate(-4deg)}
+.cf2 .pin {left:62%;top:34%;transform:translate(-50%,-100%);color:#fff;display:grid;place-items:center;width:58px;height:58px;border-radius:50% 50% 50% 0;rotate:-45deg;background:var(--bs-brand);box-shadow:0 12px 24px rgba(0,0,0,.25)}
+.cf2 .pin svg {rotate:45deg}.cf2 .pin i {position:absolute;width:120px;height:120px;border-radius:50%;background:rgba(154,91,52,.18);z-index:-1;animation:bs-cf2p 2.4s ease-out infinite}
+@keyframes bs-cf2p{from{transform:scale(.3);opacity:1}to{transform:scale(1.2);opacity:0}}
+.cf2 .bs-wrap {position:relative;padding-top:72px;padding-bottom:72px;pointer-events:none}
+.cf2 .card {pointer-events:auto;width:400px;max-width:100%;background:#fff;border-radius:24px;padding:32px;box-shadow:0 40px 80px -30px rgba(60,40,20,.45);display:grid;gap:14px}
+.cf2 h2 {font-family:Georgia,serif;font-weight:400;font-size:34px;letter-spacing:-.02em}
+.cf2 .addr {font-size:17px;line-height:1.55}
+.cf2 dl {display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:0;padding:14px 0;border-top:1px solid var(--bs-line);border-bottom:1px solid var(--bs-line);font-size:14.5px}.cf2 dt {color:var(--bs-muted)}.cf2 dd {margin:0;font-weight:600;text-align:right}
+.cf2 .b {display:flex;gap:10px}.cf2 .b .bs-btn {flex:1;height:48px}
+.cf2 .tr {display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--bs-muted);font-size:13.5px}.cf2 .tr span {display:inline-flex;gap:6px;align-items:center;white-space:nowrap}.cf2 .tr svg {flex:none}
+@media(prefers-reduced-motion:reduce){.cf2 .pin i {animation:none;opacity:.5}}
+@media(max-width:700px){.cf2 {min-height:0}.cf2 .map {position:relative;height:300px}.cf2 .pin {left:50%;top:50%}.cf2 .bs-wrap {padding-top:0;padding-bottom:40px;margin-top:-56px}.cf2 .card {width:100%;padding:24px}}
+</style>
+<style>
+/* Preview page only: you do not need this block in your site */
+html {font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body {margin:0;color:var(--bs-ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+</style>
+</head>
+<body>
+<section class="bs-contact-02 cf2">
+  <!-- Replace .map with your map embed, e.g. <iframe class="map" src="..." loading="lazy" title="Map"></iframe> -->
+  <div class="map" role="img" aria-label="Map showing our studio on Canal Street">
+    <span class="river"></span><span class="park"></span><span class="rd r1"></span><span class="rd r2"></span><span class="rd r3"></span><span class="rd r4"></span>
+    <span class="pin"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><i></i></span>
+  </div>
+  <div class="bs-wrap"><div class="card">
+    <span class="eyebrow">Visit the studio</span>
+    <h2>Maison Interiors</h2>
+    <p class="addr">24 Rue du Marché<br>69002 Lyon, France</p>
+    <dl><dt>Tue–Fri</dt><dd>10:00 – 19:00</dd><dt>Saturday</dt><dd>10:00 – 17:00</dd><dt>Sun–Mon</dt><dd>By appointment</dd></dl>
+    <div class="b"><a href="#" class="bs-btn bs-btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg> Get directions</a><a href="#" class="bs-btn bs-btn-ghost"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg> Call</a></div>
+    <p class="tr"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 16l1.5-6A2 2 0 0 1 8.4 8.5h7.2a2 2 0 0 1 1.9 1.5L19 16"/><rect x="3" y="15" width="18" height="4" rx="1.5"/><circle cx="7" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg> Parking on Place Carnot</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></svg> Metro A, Bellecour</span></p>
+  </div></div>
+</section>
+
+</body>
+</html>

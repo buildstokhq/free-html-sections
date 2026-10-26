@@ -1,0 +1,93 @@
+<!doctype html>
+<!-- E-commerce section 02 · Product grid with filters · Free from Buildstok: https://buildstok.com/products/ecommerce-pack-html/ · Licence: https://buildstok.com/license/ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-commerce section 02 · Product grid with filters</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* bs-scoped */
+.bs-ecommerce-02 {--bs-brand:#4f46e5;--bs-brand-ink:#ffffff;--bs-ink:#0f172a;--bs-muted:#64748b;--bs-line:#e2e8f0;--bs-soft:#f8fafc;--bs-radius:12px;--bs-max:1200px}
+.bs-ecommerce-02, .bs-ecommerce-02 *, .bs-ecommerce-02::before, .bs-ecommerce-02 *::before, .bs-ecommerce-02::after, .bs-ecommerce-02 *::after {box-sizing:border-box}
+.bs-ecommerce-02 {font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.bs-ecommerce-02 {color:var(--bs-ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+.bs-ecommerce-02 img, .bs-ecommerce-02 svg {max-width:100%}
+.bs-ecommerce-02 a {color:inherit;text-decoration:none}
+.bs-ecommerce-02 button, .bs-ecommerce-02 input, .bs-ecommerce-02 select, .bs-ecommerce-02 textarea {font:inherit;color:inherit}
+.bs-ecommerce-02 button {cursor:pointer}
+.bs-ecommerce-02 h1, .bs-ecommerce-02 h2, .bs-ecommerce-02 h3, .bs-ecommerce-02 h4, .bs-ecommerce-02 p {margin:0}.bs-ecommerce-02 h1, .bs-ecommerce-02 h2 {line-height:1.12}.bs-ecommerce-02 h3, .bs-ecommerce-02 h4 {line-height:1.3}
+.bs-ecommerce-02 .bs-wrap {max-width:var(--bs-max);margin:0 auto;padding:0 24px}
+.bs-ecommerce-02 .bs-logo {display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.02em}
+.bs-ecommerce-02 .bs-logo-mark {display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:var(--bs-brand);color:var(--bs-brand-ink);flex:none}
+.bs-ecommerce-02 .bs-btn {display:inline-flex;align-items:center;justify-content:center;gap:8px;height:46px;padding:0 22px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid transparent;transition:.18s;white-space:nowrap}
+.bs-ecommerce-02 .bs-btn svg {flex:none}
+.bs-ecommerce-02 .bs-btn-primary {background:var(--bs-brand);color:var(--bs-brand-ink)}
+.bs-ecommerce-02 .bs-btn-primary:hover {filter:brightness(1.1);transform:translateY(-1px)}
+.bs-ecommerce-02 .bs-btn-ghost {border-color:var(--bs-line);background:#fff;color:var(--bs-ink)}
+.bs-ecommerce-02 .bs-btn-ghost:hover {border-color:var(--bs-ink)}
+.bs-ecommerce-02 .bs-stars {display:inline-flex;flex:none;gap:1px}.bs-ecommerce-02 .bs-stars svg {flex:none}
+.bs-ecommerce-02 .bs-sr {position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.bs-ecommerce-02 :focus-visible {outline:2px solid var(--bs-brand);outline-offset:2px}
+.bs-ecommerce-02 [tabindex="-1"]:focus {outline:none}
+@media(prefers-reduced-motion:reduce){.bs-ecommerce-02, .bs-ecommerce-02 *, .bs-ecommerce-02::before, .bs-ecommerce-02 *::before, .bs-ecommerce-02::after, .bs-ecommerce-02 *::after {animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.bs-ecommerce-02 .bs-av {display:inline-grid;place-items:center;border-radius:50%;color:#fff;font-weight:700;flex:none;letter-spacing:.02em}
+.ec2 .eyebrow {font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--bs-brand)}
+.ec2 .h2 {font-size:clamp(28px,3.8vw,44px);line-height:1.08;letter-spacing:-.035em;margin:10px 0 12px}
+.ec2 .sub {color:var(--bs-muted);font-size:17px;line-height:1.6}
+.ec2 .pimg {display:block;width:100%;height:100%}
+.ec2 {--bs-brand:#c2410c;padding:64px 0 96px;background:#fff}
+.ec2 .bc {font-size:13.5px;color:var(--bs-muted)}.ec2 .bc a:hover {color:var(--bs-ink)}
+.ec2 .top {display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--bs-line)}.ec2 .h2 {margin:6px 0 0}
+.ec2 .tools {display:flex;gap:10px}.ec2 .ftog {display:none;align-items:center;gap:8px;height:44px;padding:0 16px;border:1px solid var(--bs-line);border-radius:10px;background:#fff;font-weight:600}
+.ec2 .sort select {height:44px;border:1px solid var(--bs-line);border-radius:10px;padding:0 12px;font-weight:600;background:#fff}
+.ec2 .lay {display:grid;grid-template-columns:230px 1fr;gap:40px;align-items:start}
+.ec2 .side {position:sticky;top:20px;display:grid;gap:26px}
+.ec2 fieldset {border:0;padding:0;margin:0;display:grid;gap:10px}.ec2 legend {font-weight:700;font-size:14px;margin-bottom:10px;padding:0}
+.ec2 .ck {display:flex;align-items:center;gap:10px;font-size:15px;cursor:pointer}.ec2 .ck input {width:18px;height:18px;accent-color:var(--bs-brand)}.ec2 .ck span {margin-left:auto;color:var(--bs-muted);font-size:13px}
+.ec2 input[type=range] {width:100%;accent-color:var(--bs-brand)}.ec2 .rv {display:flex;justify-content:space-between;font-size:13.5px;color:var(--bs-muted)}.ec2 .rv output {font-weight:700;color:var(--bs-ink)}
+.ec2 .clr, .ec2 .clr2 {justify-self:start;border:0;background:none;padding:0;font-weight:600;color:var(--bs-brand);text-decoration:underline;text-underline-offset:3px}
+.ec2 .cnt {font-size:14px;color:var(--bs-muted);margin-bottom:16px}.ec2 .cnt b {color:var(--bs-ink)}
+.ec2 .grid {display:grid;grid-template-columns:repeat(3,1fr);gap:28px 20px}
+.ec2 .p {display:grid;gap:4px}.ec2 .p[hidden] {display:none}
+.ec2 .img {position:relative;display:block;aspect-ratio:1;border-radius:14px;overflow:hidden;margin-bottom:8px}.ec2 .p:hover .img svg {transform:scale(1.04)}.ec2 .img svg {transition:transform .5s}
+.ec2 .bd {position:absolute;left:10px;top:10px;font-size:12px;font-weight:700;background:#dc2626;color:#fff;padding:3px 9px;border-radius:999px}
+.ec2 .p b {font-size:15px;font-weight:600}.ec2 .pr {display:flex;gap:6px;align-items:baseline}.ec2 .pr b {font-weight:700}.ec2 .pr s {color:var(--bs-muted);font-size:13.5px}
+.ec2 .none {padding:40px;text-align:center;color:var(--bs-muted);border:1px dashed var(--bs-line);border-radius:16px}
+@media(max-width:900px){.ec2 .ftog {display:inline-flex}.ec2 .lay {grid-template-columns:1fr}.ec2 .side {display:none;position:static;padding:20px;border:1px solid var(--bs-line);border-radius:16px;grid-template-columns:1fr 1fr}.ec2 .side.open {display:grid}.ec2 .grid {grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.ec2 .top {flex-direction:column;align-items:stretch}.ec2 .tools>* {flex:1}.ec2 .sort select {width:100%}.ec2 .side.open {grid-template-columns:1fr}.ec2 .grid {gap:20px 12px}}
+</style>
+<style>
+/* Preview page only: you do not need this block in your site */
+html {font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body {margin:0;color:var(--bs-ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+</style>
+</head>
+<body>
+<section class="bs-ecommerce-02 ec2">
+  <div class="bs-wrap">
+    <div class="top"><div><nav class="bc" aria-label="Breadcrumb"><a href="#">Home</a> / <span>Shop all</span></nav><h2 class="h2">Shop all</h2></div>
+      <div class="tools"><button class="ftog" aria-expanded="false" aria-controls="ec2f"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18l-7 8v6l-4 2v-8z"/></svg> Filters</button><label class="sort"><span class="bs-sr">Sort by</span><select><option>Featured</option><option>Newest</option><option>Price: low to high</option><option>Price: high to low</option></select></label></div></div>
+    <div class="lay">
+      <aside class="side" id="ec2f">
+        <fieldset><legend>Category</legend><label class="ck"><input type="checkbox" value="Kitchen"> Kitchen<span>2</span></label><label class="ck"><input type="checkbox" value="Footwear"> Footwear<span>1</span></label><label class="ck"><input type="checkbox" value="Bags"> Bags<span>1</span></label><label class="ck"><input type="checkbox" value="Home"> Home<span>4</span></label><label class="ck"><input type="checkbox" value="Audio"> Audio<span>1</span></label><label class="ck"><input type="checkbox" value="Accessories"> Accessories<span>1</span></label></fieldset>
+        <fieldset><legend>Max price</legend><input type="range" min="25" max="450" step="5" value="450" aria-label="Maximum price"><div class="rv"><span>$25</span><output>$450</output></div></fieldset>
+        <fieldset><legend>Offers</legend><label class="ck"><input type="checkbox" class="sale"> On sale only</label></fieldset>
+        <button class="clr">Clear all filters</button>
+      </aside>
+      <div><p class="cnt" aria-live="polite"><b>10</b> products</p>
+        <div class="grid"><a href="#" class="p" data-cat="Kitchen" data-price="48" data-sale="0"><span class="img"><svg class="pimg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="400" fill="#f1ece4"/><ellipse cx="200" cy="350" rx="110" ry="14" fill="rgba(0,0,0,.08)"/><path d="M250 170h20a40 40 0 0 1 0 80h-20" fill="none" stroke="#1f2937" stroke-width="18"/><rect x="120" y="140" width="140" height="200" rx="26" fill="#1f2937"/><rect x="120" y="140" width="140" height="30" rx="14" fill="#9ca3af"/></svg></span><b>Ceramic pour-over set</b><span class="pr"><b>$48</b></span></a><a href="#" class="p" data-cat="Footwear" data-price="129" data-sale="1"><span class="img"><svg class="pimg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="400" fill="#e8eef5"/><ellipse cx="200" cy="350" rx="110" ry="14" fill="rgba(0,0,0,.08)"/><path d="M70 300c0-40 20-90 60-110l70 20c30 10 60 40 110 50 30 6 40 20 40 40v20H70z" fill="#fcd34d"/><path d="M70 300h280v26a10 10 0 0 1-10 10H80a10 10 0 0 1-10-10z" fill="#b45309"/><path d="M150 210l20 40M180 215l20 40M210 222l18 38" stroke="#b45309" stroke-width="6" stroke-linecap="round"/></svg><span class=bd>Sale</span></span><b>Trail runner 2</b><span class="pr"><b>$129</b><s>$159</s></span></a><a href="#" class="p" data-cat="Bags" data-price="64" data-sale="0"><span class="img"><svg class="pimg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="400" fill="#efe9f6"/><ellipse cx="200" cy="350" rx="110" ry="14" fill="rgba(0,0,0,.08)"/><path d="M150 150v-20a50 50 0 0 1 100 0v20" fill="none" stroke="#0f766e" stroke-width="14"/><path d="M110 150h180l20 190H90z" fill="#99f6e4"/><rect x="170" y="200" width="60" height="16" rx="8" fill="#0f766e"/></svg></span><b>Everyday tote</b><span class="pr"><b>$64</b></span></a><a href="#" class="p" data-cat="Home" data-price="89" data-sale="0"><span class="img"><svg class="pimg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="400" fill="#e9f3ec"/><ellipse cx="200" cy="350" rx="110" ry="14" fill="rgba(0,0,0,.08)"/><path d="M140 90h120l40 110H100z" fill="#fda4af"/><rect x="194" y="200" width="12" height="120" fill="#9f1239"/><ellipse cx="200" cy="330" rx="70" ry="16" fill="#9f1239"/></svg></span><b>Arc desk lamp</b><span class="pr"><b>$89</b></span></a><a href="#" class="p" data-cat="Audio" data-price="199" data-sale="1"><span class="img"><svg class="pimg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="400" fill="#f6ebe7"/><ellipse cx="200" cy="350" rx="110" ry="14" fill="rgba(0,0,0,.08)"/><path d="M110 230v-40a90 90 0 0 1 180 0v40" fill="none" stroke="#1e3a8a" stroke-width="18" stroke-linecap="round"/><rect x="90" y="210" width="60" height="110" rx="26" fill="#93c5fd"/><rect x="250" y="210" width="60" height="110" rx="26" fill="#93c5fd"/></svg><span class=bd>Sale</span></span><b>Studio headphones</b><span class="pr"><b>$199</b><s>$249</s></span></a><a href="#" class="p" data-cat="Accessories" data-price="175" data-sale="0"><span class="img"><svg class="pimg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="400" fill="#f4f1e1"/><ellipse cx="200" cy="350" rx="110" ry="14" fill="rgba(0,0,0,.08)"/><rect x="165" y="60" width="70" height="280" rx="24" fill="#3f6212"/><circle cx="200" cy="200" r="72" fill="#bef264"/><circle cx="200" cy="200" r="56" fill="#fff"/><path d="M200 200V160M200 200l26 14" stroke="#3f6212" stroke-width="7" stroke-linecap="round"/></svg></span><b>Field watch</b><span class="pr"><b>$175</b></span></a><a href="#" class="p" data-cat="Home" data-price="420" data-sale="0"><span class="img"><svg class="pimg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="400" fill="#e6f1f3"/><ellipse cx="200" cy="350" rx="110" ry="14" fill="rgba(0,0,0,.08)"/><rect x="120" y="80" width="160" height="150" rx="40" fill="#d8b4fe"/><rect x="100" y="210" width="200" height="60" rx="24" fill="#6b21a8"/><path d="M125 270l-15 70M275 270l15 70" stroke="#6b21a8" stroke-width="12" stroke-linecap="round"/></svg></span><b>Lounge chair</b><span class="pr"><b>$420</b></span></a><a href="#" class="p" data-cat="Kitchen" data-price="32" data-sale="0"><span class="img"><svg class="pimg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="400" fill="#f3e8ee"/><ellipse cx="200" cy="350" rx="110" ry="14" fill="rgba(0,0,0,.08)"/><rect x="165" y="70" width="70" height="40" rx="8" fill="#7c2d12"/><rect x="140" y="105" width="120" height="240" rx="40" fill="#fdba74"/><rect x="140" y="180" width="120" height="90" fill="#7c2d12" opacity=".9"/><rect x="160" y="200" width="80" height="10" rx="5" fill="#fff" opacity=".7"/></svg></span><b>Glass bottle 750ml</b><span class="pr"><b>$32</b></span></a><a href="#" class="p" data-cat="Home" data-price="54" data-sale="0"><span class="img"><svg class="pimg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="400" fill="#f1ece4"/><ellipse cx="200" cy="350" rx="110" ry="14" fill="rgba(0,0,0,.08)"/><path d="M150 250h100l-14 90h-72z" fill="#1f2937"/><path d="M200 250c-40-40-60-100-30-150 20 40 40 90 30 150zM200 250c20-60 60-90 100-100-10 50-40 80-100 100zM200 250c-40-30-90-40-120-30 20 30 60 40 120 30z" fill="#9ca3af"/></svg></span><b>Monstera in pot</b><span class="pr"><b>$54</b></span></a><a href="#" class="p" data-cat="Home" data-price="28" data-sale="1"><span class="img"><svg class="pimg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="400" fill="#e8eef5"/><ellipse cx="200" cy="350" rx="110" ry="14" fill="rgba(0,0,0,.08)"/><rect x="130" y="150" width="140" height="190" rx="18" fill="#fcd34d"/><rect x="130" y="150" width="140" height="26" rx="13" fill="#b45309" opacity=".35"/><path d="M200 150v-22" stroke="#334155" stroke-width="4"/><path d="M200 128c-14-14-8-36 0-48 8 12 14 34 0 48z" fill="#f59e0b"/><rect x="155" y="230" width="90" height="50" rx="6" fill="#fff" opacity=".8"/></svg><span class=bd>Sale</span></span><b>Soy candle, fig</b><span class="pr"><b>$28</b><s>$36</s></span></a></div>
+        <p class="none" hidden>No products match these filters. <button class="clr2">Clear filters</button></p></div>
+    </div>
+  </div>
+</section>
+<script>document.querySelectorAll('.ec2').forEach(function(s){var ps=[].slice.call(s.querySelectorAll('.p')),r=s.querySelector('input[type=range]'),sale=s.querySelector('.sale');
+  function run(){var cats=[].slice.call(s.querySelectorAll('.ck input[value]:checked')).map(function(x){return x.value}),mx=+r.value,n=0;s.querySelector('.rv output').textContent='$'+mx;
+    ps.forEach(function(p){var ok=(!cats.length||cats.indexOf(p.dataset.cat)>-1)&&+p.dataset.price<=mx&&(!sale.checked||p.dataset.sale==='1');p.hidden=!ok;if(ok)n++});
+    s.querySelector('.cnt b').textContent=n;s.querySelector('.cnt').lastChild.textContent=n===1?' product':' products';s.querySelector('.none').hidden=n>0}
+  s.querySelectorAll('.side input').forEach(function(i){i.addEventListener('input',run)});
+  function clr(){s.querySelectorAll('.side input[type=checkbox]').forEach(function(c){c.checked=false});r.value=r.max;run()}
+  s.querySelector('.clr').onclick=clr;s.querySelector('.clr2').onclick=clr;
+  var t=s.querySelector('.ftog');t.addEventListener('click',function(){var o=t.getAttribute('aria-expanded')!=='true';t.setAttribute('aria-expanded',o);s.querySelector('.side').classList.toggle('open',o)})});</script>
+</body>
+</html>

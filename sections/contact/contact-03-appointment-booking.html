@@ -1,0 +1,105 @@
+<!doctype html>
+<!-- Contact section 03 · Appointment booking · Free from Buildstok: https://buildstok.com/products/contact-pack-html/ · Licence: https://buildstok.com/license/ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact section 03 · Appointment booking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* bs-scoped */
+.bs-contact-03 {--bs-brand:#4f46e5;--bs-brand-ink:#ffffff;--bs-ink:#0f172a;--bs-muted:#64748b;--bs-line:#e2e8f0;--bs-soft:#f8fafc;--bs-radius:12px;--bs-max:1200px}
+.bs-contact-03, .bs-contact-03 *, .bs-contact-03::before, .bs-contact-03 *::before, .bs-contact-03::after, .bs-contact-03 *::after {box-sizing:border-box}
+.bs-contact-03 {font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.bs-contact-03 {color:var(--bs-ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+.bs-contact-03 img, .bs-contact-03 svg {max-width:100%}
+.bs-contact-03 a {color:inherit;text-decoration:none}
+.bs-contact-03 button, .bs-contact-03 input, .bs-contact-03 select, .bs-contact-03 textarea {font:inherit;color:inherit}
+.bs-contact-03 button {cursor:pointer}
+.bs-contact-03 h1, .bs-contact-03 h2, .bs-contact-03 h3, .bs-contact-03 h4, .bs-contact-03 p {margin:0}.bs-contact-03 h1, .bs-contact-03 h2 {line-height:1.12}.bs-contact-03 h3, .bs-contact-03 h4 {line-height:1.3}
+.bs-contact-03 .bs-wrap {max-width:var(--bs-max);margin:0 auto;padding:0 24px}
+.bs-contact-03 .bs-logo {display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.02em}
+.bs-contact-03 .bs-logo-mark {display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:var(--bs-brand);color:var(--bs-brand-ink);flex:none}
+.bs-contact-03 .bs-btn {display:inline-flex;align-items:center;justify-content:center;gap:8px;height:46px;padding:0 22px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid transparent;transition:.18s;white-space:nowrap}
+.bs-contact-03 .bs-btn svg {flex:none}
+.bs-contact-03 .bs-btn-primary {background:var(--bs-brand);color:var(--bs-brand-ink)}
+.bs-contact-03 .bs-btn-primary:hover {filter:brightness(1.1);transform:translateY(-1px)}
+.bs-contact-03 .bs-btn-ghost {border-color:var(--bs-line);background:#fff;color:var(--bs-ink)}
+.bs-contact-03 .bs-btn-ghost:hover {border-color:var(--bs-ink)}
+.bs-contact-03 .bs-stars {display:inline-flex;flex:none;gap:1px}.bs-contact-03 .bs-stars svg {flex:none}
+.bs-contact-03 .bs-sr {position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.bs-contact-03 :focus-visible {outline:2px solid var(--bs-brand);outline-offset:2px}
+.bs-contact-03 [tabindex="-1"]:focus {outline:none}
+@media(prefers-reduced-motion:reduce){.bs-contact-03, .bs-contact-03 *, .bs-contact-03::before, .bs-contact-03 *::before, .bs-contact-03::after, .bs-contact-03 *::after {animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.bs-contact-03 .bs-av {display:inline-grid;place-items:center;border-radius:50%;color:#fff;font-weight:700;flex:none;letter-spacing:.02em}
+.cf3 .eyebrow {font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--bs-brand)}
+.cf3 .h2 {font-size:clamp(30px,4.2vw,50px);line-height:1.08;letter-spacing:-.035em;margin:12px 0 14px}
+.cf3 .sub {color:var(--bs-muted);font-size:18px;line-height:1.6}.cf3 label {display:grid;gap:7px;font-size:14px;font-weight:600}
+.cf3 input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]), .cf3 select, .cf3 textarea {width:100%;min-width:0;height:50px;border:1px solid var(--bs-line);border-radius:12px;padding:0 14px;font-size:15px;font-weight:400;background:#fff;transition:border-color .15s,box-shadow .15s}
+.cf3 textarea {height:auto;min-height:130px;padding:12px 14px;resize:vertical;line-height:1.5}
+.cf3 input:focus, .cf3 select:focus, .cf3 textarea:focus {outline:none;border-color:var(--bs-brand);box-shadow:0 0 0 4px color-mix(in srgb,var(--bs-brand) 16%,transparent)}
+.cf3 .row2 {display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cf3 .ok {display:none;gap:8px;align-items:center;font-weight:600;color:#15803d}.cf3 .done .ok {display:flex}
+@media(max-width:560px){.cf3 .row2 {grid-template-columns:1fr}}
+.cf3 {--bs-brand:#7c3aed;padding:100px 0;background:#faf8ff}
+.cf3 .head {text-align:center;margin-bottom:36px}
+.cf3 .box {display:grid;grid-template-columns:260px 1fr 240px;background:#fff;border:1px solid var(--bs-line);border-radius:24px;overflow:hidden;box-shadow:0 40px 80px -50px rgba(76,29,149,.4)}
+.cf3 .who {padding:28px;border-right:1px solid var(--bs-line);display:grid;gap:4px;align-content:start}
+.cf3 .who>b {font-size:17px;margin-top:10px}.cf3 .who>small {color:var(--bs-muted)}
+.cf3 fieldset {border:0;padding:0;margin:20px 0 0;display:grid;gap:8px}.cf3 legend {font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--bs-muted);margin-bottom:8px;padding:0}
+.cf3 .opt {display:block;position:relative;cursor:pointer;font-weight:400}.cf3 .opt input {position:absolute;opacity:0}
+.cf3 .opt>span {display:grid;gap:2px;padding:12px 14px;border:1px solid var(--bs-line);border-radius:12px;transition:.15s}.cf3 .opt b {font-size:14.5px}.cf3 .opt small {display:flex;gap:5px;align-items:center;color:var(--bs-muted);font-size:12.5px}
+.cf3 .opt input:checked+span {border-color:var(--bs-brand);background:#f5f3ff}.cf3 .opt input:focus-visible+span {outline:2px solid var(--bs-brand);outline-offset:2px}
+.cf3 .tz {display:flex;gap:6px;align-items:center;color:var(--bs-muted);font-size:12.5px;margin-top:16px}
+.cf3 .cal {padding:28px}
+.cf3 .ch {display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.cf3 .ch b {font-size:17px}.cf3 .ch button {width:36px;height:36px;border-radius:10px;border:1px solid var(--bs-line);background:#fff;display:inline-grid;place-items:center;margin-left:6px}.cf3 .ch button:disabled {opacity:.35}
+.cf3 .grid7 {display:grid;grid-template-columns:repeat(7,1fr);gap:6px;text-align:center}
+.cf3 .wd {font-size:12px;font-weight:600;color:var(--bs-muted);padding-bottom:6px}
+.cf3 .d {height:44px;border-radius:12px;border:0;background:#f5f3ff;color:var(--bs-brand);font-weight:700;font-size:15px}.cf3 .d:hover:not(:disabled) {background:#ede9fe}
+.cf3 .d:disabled {background:none;color:#cbd5e1;font-weight:500;cursor:default}.cf3 .d[aria-pressed=true] {background:var(--bs-brand);color:#fff}
+.cf3 .times {padding:28px 22px;border-left:1px solid var(--bs-line);display:flex;flex-direction:column;gap:14px}
+.cf3 .sel-day {font-size:15px}
+.cf3 .sl {display:grid;grid-template-columns:1fr 1fr;gap:8px}.cf3 .t {height:42px;border-radius:10px;border:1px solid #ddd6fe;background:#fff;color:var(--bs-brand);font-weight:600}.cf3 .t:hover {border-color:var(--bs-brand)}.cf3 .t[aria-pressed=true] {background:var(--bs-brand);border-color:var(--bs-brand);color:#fff}
+.cf3 .sum {margin-top:auto;padding:14px;border-radius:12px;background:var(--bs-soft);display:grid;gap:2px}.cf3 .sum small {color:var(--bs-muted);font-size:12px}.cf3 .s1 {font-size:14.5px}.cf3 .s2 {font-size:13.5px;color:var(--bs-brand);font-weight:600}
+.cf3 .times .bs-btn {height:48px}
+@media(max-width:1000px){.cf3 .box {grid-template-columns:1fr 1fr}.cf3 .who {grid-column:1/-1;border-right:0;border-bottom:1px solid var(--bs-line);grid-template-columns:auto 1fr;column-gap:14px}.cf3 .who .bs-av {grid-row:span 2}.cf3 .who>b {margin:0;align-self:end}.cf3 .who fieldset, .cf3 .tz {grid-column:1/-1}.cf3 .svc {grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.cf3 {padding:64px 0}.cf3 .box {grid-template-columns:1fr}.cf3 .times {border-left:0;border-top:1px solid var(--bs-line)}.cf3 .svc {grid-template-columns:1fr}.cf3 .cal, .cf3 .who {padding:20px}.cf3 .grid7 {gap:4px}.cf3 .d {height:auto;aspect-ratio:1;border-radius:9px;font-size:14px}}
+</style>
+<style>
+/* Preview page only: you do not need this block in your site */
+html {font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body {margin:0;color:var(--bs-ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+</style>
+</head>
+<body>
+<section class="bs-contact-03 cf3">
+  <div class="bs-wrap">
+    <div class="head"><span class="eyebrow">Book a session</span><h2 class="h2">Find a time that works</h2></div>
+    <form class="box" data-ok>
+      <aside class="who">
+        <span class="bs-av" style="width:56px;height:56px;background:linear-gradient(135deg,#ec4899,#ec4899cc);font-size:21px" aria-hidden="true">NV</span><b>Nora Vance</b><small>Brand strategist</small>
+        <fieldset class="svc"><legend>Session</legend><label class="opt"><input type="radio" name="cf3s" value="Intro call" data-l="30 min · Free" checked><span><b>Intro call</b><small><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 30 min · Free</small></span></label><label class="opt"><input type="radio" name="cf3s" value="Strategy session" data-l="60 min · $180"><span><b>Strategy session</b><small><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 60 min · $180</small></span></label><label class="opt"><input type="radio" name="cf3s" value="Brand workshop" data-l="3 hrs · $650"><span><b>Brand workshop</b><small><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 3 hrs · $650</small></span></label></fieldset>
+        <p class="tz"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg> Times shown in London (GMT)</p>
+      </aside>
+      <div class="cal">
+        <div class="ch"><b>November 2026</b><div><button type="button" aria-label="Previous month" disabled><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button><button type="button" aria-label="Next month"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button></div></div>
+        <div class="grid7" aria-hidden="true"><span class="wd">Mo</span><span class="wd">Tu</span><span class="wd">We</span><span class="wd">Th</span><span class="wd">Fr</span><span class="wd">Sa</span><span class="wd">Su</span></div>
+        <div class="grid7 days" role="group" aria-label="Choose a date"><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span><button type="button" class="d" data-d="1" disabled aria-pressed=false aria-label="November 1">1</button><button type="button" class="d" data-d="2" disabled aria-pressed=false aria-label="November 2">2</button><button type="button" class="d" data-d="3" disabled aria-pressed=false aria-label="November 3">3</button><button type="button" class="d" data-d="4" disabled aria-pressed=false aria-label="November 4">4</button><button type="button" class="d" data-d="5" disabled aria-pressed=false aria-label="November 5">5</button><button type="button" class="d" data-d="6" disabled aria-pressed=false aria-label="November 6">6</button><button type="button" class="d" data-d="7" disabled aria-pressed=false aria-label="November 7">7</button><button type="button" class="d" data-d="8" disabled aria-pressed=false aria-label="November 8">8</button><button type="button" class="d" data-d="9" aria-pressed=false aria-label="November 9">9</button><button type="button" class="d" data-d="10" aria-pressed=false aria-label="November 10">10</button><button type="button" class="d" data-d="11" aria-pressed=false aria-label="November 11">11</button><button type="button" class="d" data-d="12" aria-pressed=true aria-label="November 12">12</button><button type="button" class="d" data-d="13" aria-pressed=false aria-label="November 13">13</button><button type="button" class="d" data-d="14" disabled aria-pressed=false aria-label="November 14">14</button><button type="button" class="d" data-d="15" disabled aria-pressed=false aria-label="November 15">15</button><button type="button" class="d" data-d="16" aria-pressed=false aria-label="November 16">16</button><button type="button" class="d" data-d="17" aria-pressed=false aria-label="November 17">17</button><button type="button" class="d" data-d="18" aria-pressed=false aria-label="November 18">18</button><button type="button" class="d" data-d="19" aria-pressed=false aria-label="November 19">19</button><button type="button" class="d" data-d="20" aria-pressed=false aria-label="November 20">20</button><button type="button" class="d" data-d="21" disabled aria-pressed=false aria-label="November 21">21</button><button type="button" class="d" data-d="22" disabled aria-pressed=false aria-label="November 22">22</button><button type="button" class="d" data-d="23" aria-pressed=false aria-label="November 23">23</button><button type="button" class="d" data-d="24" aria-pressed=false aria-label="November 24">24</button><button type="button" class="d" data-d="25" aria-pressed=false aria-label="November 25">25</button><button type="button" class="d" data-d="26" aria-pressed=false aria-label="November 26">26</button><button type="button" class="d" data-d="27" aria-pressed=false aria-label="November 27">27</button><button type="button" class="d" data-d="28" disabled aria-pressed=false aria-label="November 28">28</button><button type="button" class="d" data-d="29" disabled aria-pressed=false aria-label="November 29">29</button><button type="button" class="d" data-d="30" aria-pressed=false aria-label="November 30">30</button></div>
+      </div>
+      <div class="times"><b class="sel-day">Thursday 12 November</b><div class="sl" role="group" aria-label="Choose a time"><button type="button" class="t" aria-pressed="false">09:00</button><button type="button" class="t" aria-pressed="false">09:45</button><button type="button" class="t" aria-pressed="true">10:30</button><button type="button" class="t" aria-pressed="false">11:15</button><button type="button" class="t" aria-pressed="false">13:00</button><button type="button" class="t" aria-pressed="false">14:30</button><button type="button" class="t" aria-pressed="false">15:15</button><button type="button" class="t" aria-pressed="false">16:00</button></div>
+        <div class="sum"><small>Your booking</small><b class="s1">Intro call · 30 min</b><span class="s2">Thu 12 Nov at 10:30</span></div>
+        <button class="bs-btn bs-btn-primary">Confirm booking</button><p class="ok" role="status"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg> Booked! A calendar invite is on its way.</p></div>
+    </form>
+  </div>
+</section>
+<script>document.querySelectorAll('form[data-ok]').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();f.classList.add('done');var o=f.querySelector('.ok');if(o)o.focus&&o.setAttribute('tabindex','-1')})});
+document.querySelectorAll('.cf3').forEach(function(s){var wd=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],wl=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  function pick(sel,b){s.querySelectorAll(sel).forEach(function(x){x.setAttribute('aria-pressed',x===b)})}
+  function sum(){var d=s.querySelector('.d[aria-pressed=true]'),t=s.querySelector('.t[aria-pressed=true]'),o=s.querySelector('input[name=cf3s]:checked');
+    var dt=new Date(2026,10,+d.dataset.d);s.querySelector('.sel-day').textContent=wl[dt.getDay()]+' '+d.dataset.d+' November';
+    s.querySelector('.s1').textContent=o.value+' · '+o.dataset.l.split(' · ')[0];s.querySelector('.s2').textContent=wd[dt.getDay()]+' '+d.dataset.d+' Nov at '+t.textContent}
+  s.querySelectorAll('.d:not(:disabled)').forEach(function(b){b.addEventListener('click',function(){pick('.d',b);sum()})});
+  s.querySelectorAll('.t').forEach(function(b){b.addEventListener('click',function(){pick('.t',b);sum()})});
+  s.querySelectorAll('input[name=cf3s]').forEach(function(r){r.addEventListener('change',sum)});sum()});</script>
+</body>
+</html>
